@@ -8,16 +8,14 @@ const partnerSchema = new Schema(
       required: true,
       unique: true,
     },
-
     image: {
       type: Image,
       required: true,
     },
-
     featured: {
       type: Boolean,
+      default: false,
     },
-
     description: {
       type: String,
       required: true,
